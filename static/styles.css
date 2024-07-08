@@ -1,0 +1,118 @@
+:root {
+  --color1: #0a0a2399;
+  --color2: #ffffff;
+  --color3: #0a0a23;
+  --color4: #ff0000;
+  --color5: #0a58ca;
+}
+
+body {
+  background-image: url(pesquisa.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.div1 {
+  background-color: var(--color1);
+  color: var(--color2);
+  width: 100%;
+  max-width: 844px;
+  margin: 0 auto;
+}
+
+input[class="form-control"] {
+  background-color: var(--color3);
+  color: var(--color2);
+}
+
+input[class="form-control"]::placeholder {
+  color: var(--color2);
+}
+
+input[class="form-control"]:focus {
+  background-color: var(--color3);
+  color: var(--color2);
+  border-color: var(--color2);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input[id="idade"]::-webkit-inner-spin-button {
+  /*Removendo o botão padrão do input tipo number*/
+  -webkit-appearance: none;
+}
+
+input[id="idade"] {
+  border-right: none;
+}
+
+span[class="input-group-text"] {
+  background-color: var(--color3);
+  color: var(--color2);
+  cursor: pointer;
+}
+
+span[id="mais"] {
+  border-left: 0;
+}
+
+select[class="form-select"] {
+  background-color: var(--color3);
+  color: var(--color2);
+  /*Trocando o ícone do select*/
+  background-image: url(divisa.svg);
+}
+
+select[class="form-select"]:focus {
+  border-color: var(--color2);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+textarea[id="comentários"] {
+  background-color: var(--color3);
+  border: 1px solid var(--color3);
+  color: var(--color2);
+  resize: none;
+}
+
+textarea[id="comentários"]::placeholder {
+  color: var(--color2);
+}
+
+textarea[id="comentários"]:focus {
+  background-color: var(--color3);
+  color: var(--color2);
+  border-color: var(--color3);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+div[class="form-text"] {
+  color: var(--color4);
+}
+
+.div2 {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  width: 100%;
+}
+
+.p1 {
+  text-align: center;
+}
+
+a {
+  color: var(--color2);
+}
+
+a:hover {
+  color: var(--color5);
+}
+
+

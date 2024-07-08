@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulário de pesquisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de pesquisa">
+    <!-- Importando bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- >Importando bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- >Colocar o CSS após o bootstrap faz sobrescrever-->
+    <link rel="stylesheet" href="./static/styles.css">
+  </head>
+  <body>
+    <div class="container-fluid px-0">
+      <div class="my-5 pb-4 div1">
+        <header class="text-center pt-3">
+          <h1>Formulário de pesquisa</h1>
+          <p>Insira sua informações no formulário abaixo</p>
+        </header>
+        <main>
+          <form id="form" class="mx-4">
+            <section>
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" id="nome" name="nome" class="form-control" autocomplete="off">
+              <div id="mensagem1" class="form-text"></div>
+
+              <label for="email" class="form-label mt-3">Email</label>
+              <input type="text" id="email" name="email" class="form-control" autocomplete="off">
+              <div id="mensagem2" class="form-text"></div>
+
+              <label for="idade" class="form-label mt-3">Idade</label>
+              <div class="input-group">
+                <input type="number" id="idade" name="idade" class="form-control">
+                <span class="input-group-text" id="menos" onclick="menos()"><i class="bi bi-dash"></i></span>
+                <span class="input-group-text" id="mais" onclick="mais()"><i class="bi bi-plus"></i></i></span>
+              </div>
+              <div id="mensagem3" class="form-text"></div>
+
+              <label for="instrução" class="form-label mt-3">Grau de instrução</label>
+              <select id="instrução" name="instrução" class="form-select">
+                <option disabled selected value>Selecione</option>
+                <option value="Ensino Fundamental">Ensino Fundamental</option>
+                <option value="Ensino Médio">Ensino Médio</option>
+                <option value="Ensino Superior">Ensino Superior</option>
+                <option value="Pós-graduação">Pós-graduação</option>
+              </select>
+              <div id="mensagem4" class="form-text"></div>
+            </section>
+            <section>
+              <p class="form-label mt-3">Já domina alguma linguagem de programação?</p>
+              <input type="radio" id="sim" name="simenão" value="Sim" checked />
+              <label for="sim"> Sim</label><br />
+              <input type="radio" id="não" name="simenão" value="Não" />
+              <label for="não"> Não</label>
+
+              <p class="form-label mt-3">Escolha as linguagens de programação de seu interesse:</p>
+              <input type="checkbox" id="python" name="python" value="Python" checked />
+              <label for="python"> Python</label><br />
+              <input type="checkbox" id="c" name="c" value="C" />
+              <label for="c"> C</label><br />
+              <input type="checkbox" id="java" name="java" value="Java" />
+              <label for="java"> Java</label><br />
+              <input type="checkbox" id="outras" name="outras" value="Outras linguagens" />
+              <label for="outras"> Outras linguagens</label>
+            </section>
+            <section>
+              <label for="comentários" class="form-label mt-3">Comentários:</label>
+              <textarea id="comentários" name="comentários" class="form-control" rows="3" cols="30" placeholder="Poderiam adicionar a opção de..."></textarea>
+            </section>
+            <div class="mt-3 div2">
+              <button class="btn btn-outline-light rounded-4 button">Enviar</button>
+            </div>
+          </form>
+        </main>
+        <footer>
+          <p class="mt-3 mb-0 p1">© <a href="mailto:malbav100@gmail.com" target="_blank">Malba Vinicius Lopes Santos</a> 2024</p>
+        </footer>
+      </div>
+    </div>
+    <!-- Colocando aqui evita o erro de não identificar o formulário -->
+    <script src="./static/functions.js"></script>
+  </body>
+</html>
