@@ -1,5 +1,5 @@
 # SearchForm
-Front-end project using HTML, CSS and JavaScript that simulates a search form
+Front-end project using HTML, CSS and JavaScript that simulates a search form.
 
 ## Requirements
 
